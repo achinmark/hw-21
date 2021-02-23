@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <title>CA</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN18KMPC8R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SN18KMPC8R');
+    </script>
+    <!--Notes
+    Part 3: Add Your Site Tag to Your Prototype (5 min)
+    Open your prototype in Visual Studio (VS) Code.
+    Paste your unique Global Site Tag in every HTML page.
+    Tip: Recall from Unit 19 that the correct location for a <script> element is inside of the <head> element. If you have omitted the <head> element, paste the <script> directly below your <title>.
+    Tip: If you are using WordPress, you only need to edit one file: header.php. The code in this PHP file will be added to the top of every page automatically.
+    Commit your changes and push to your GitHub repository.
+    -->
+        
+    <!-- Hotjar Tracking Code for https://achinmark.github.io/hw-21/) Site ID: 2261564-->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:2261564,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!--Notes
+    Paste your unique Tracking Code in every HTML page.
+    Tip: Recall from Unit 19 that the correct location for a <script> element is inside of the <head> element. If you have omitted the <head> element, paste the <script> directly below your <title>.
+    Tip: If you are using WordPress, you only need to edit one file: header.php. The code in this PHP file will be added to the top of every page automatically.
+    -->
+
+</head>
+<body>
+  <body style="background-color: #99E9F2;">
+  </style>
+    <!--Nav-->
+    <div class="header">
+        <ul>
+            <li><a href="../html/index.html">HOME</a></li>
+            <li><a href="../html/getstarted.html">GET STARTED</a></li>
+            <li><a href="../html/index.html"><img src="../images/duck_gradient.png" height="200px" width="200px"></a></li>
+            <li><a href="../html/wheretobuy.html">WHERE TO BUY</a></li>
+            <li><a href="../html/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+  </div>
+  <!--Container3 Destinations-->
+<div class="container-2">
+        <h1>Get Started and Get Collecting</h1>
+        <br>
+        <!--Method A-->
+        <h2>Method A: Purchase Online</h2>
+    <div class="card-group justify-content-center">
+        <app-project *ngFor="let project of filtered | async" class="m-3" [project]="project"></app-project>
+        <!--Step1-->
+        <div class="card">
+            <img src="../images/online.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Step 1: Buy Online</h5>
+              <p class="card-text">
+                Open a web browser, such as Google, on a mobile or desktop device. Click on "Shopping" and search for "rubber duck" to get started. You can add different descriptors to find different ducks.
+              </p>
+        </div>
+    </div>
+          <!--Step2-->
+    <div class="card">
+            <img src="../images/deliver.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+        <div class="card-body">
+              <h5 class="card-title">Step 2: Wait for Delivery</h5>
+              <p class="card-text">
+                Depending on which website you purchase from, your rubber duckies may be shipped overnight or even in a couple months (especially if you snag a rare one from overseas). Be patient and continue to track your package until your duckies arrive safely to your home.
+              </p>
+        </div>
+    </div>
+          <!--Step3-->
+    <div class="card">
+            <img src="../images/enjoy.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+        <div class="card-body">
+              <h5 class="card-title">Step 3: Play time!</h5>
+              <p class="card-text">
+                If your rubber duckies are here, it's time to celebrate! You can either play with them in the bathtub, display them on a shelf and show them off, package them away for safekeeping, or even trade with another collector! If you take a picture and share on social media, be sure to tag us (@duckduckwho) in your post.
+              </p>
+        </div>
+    </div>
+</div>
+<br>
+<!--Method B-->
+        <h2>Method B: Purchase In-Store</h2>
+    <div class="card-group justify-content-center">
+        <app-project *ngFor="let project of filtered | async" class="m-3" [project]="project"></app-project>
+        <!--Step1-->
+    <div class="card">
+            <img src="../images/store.jpg"
+              class="card-img-top"
+              alt="..."
+              />
+        <div class="card-body">
+              <h5 class="card-title">Step 1: Buy In-Store</h5>
+              <p class="card-text">
+                Buy in-store. If you don't know of any local toy stores near by, you'll want to search for directions on a mobile or desktop device. If you are searching for a particular ducky, the store employees can help you find or order one using their catalog.
+              </p>
+        </div>
+    </div>
+          <!--Step2-->
+    <div class="card">
+            <img src="../images/checkout.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+        <div class="card-body">
+              <h5 class="card-title">Step 2: Check-Out</h5>
+              <p class="card-text">
+                The perk of buying your rubber duckies in-store is that you'll receive the product immediately and won't have to pay or wait for shipping (unless it's a special or back order). It's great to support local stores as well!
+              </p>
+        </div>
+    </div>
+          <!--Step3-->
+        <div class="card">
+            <img src="../images/enjoy3.png"
+              class="card-img-top"
+              alt="..."
+            />
+        <div class="card-body">
+              <h5 class="card-title">Step 3: Play time!</h5>
+              <p class="card-text">
+                If your rubber duckies are here, it's time to celebrate! You can either play with them in the bathtub, display them on a shelf and show them off, package them away for safekeeping, or even trade with another collector! If you take a picture and share on social media, be sure to tag us (@duckduckwho) in your post.
+              </p>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+    <!--Mailing Form-->
+    <div class="container-3">
+      <br><br><br>
+      <h1>Join our Mailing List</h1>
+      <h5>Sign up for announcements, news, and giveaways.</h5>
+          <div class="form-group">
+          <input type="text" id="inputEmail" size="50px" placeholder="johndoe@gmail.com">
+          </div>
+          <button type="submit" class="btn btn-primary-2"><a href="../html/thanks.html">Sign Me Up</button>
+          <br><br><br><br>
+  </div>
+    <!--Footer-->
+    <div class="footer">
+        <ul>
+            <li><a href="../html/index.html"><img src="../images/duck_gradient.png" height="100px" width="100px"></a></li>
+            <li><a href="../html/index.html">HOME</a></li>
+            <li><a href="../html/getstarted.html">GET STARTED</a></li>
+            <li><a href="../html/wheretobuy.html">WHERE TO BUY</a></li>
+            <li><a href="../html/contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+  </body>
+</body>
+</html>
+
+
+
+
+
